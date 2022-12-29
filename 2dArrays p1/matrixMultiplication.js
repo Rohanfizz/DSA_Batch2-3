@@ -14,7 +14,7 @@ let a = [
 ];
 
 let b = [
-    [1, 4],
+    [1, 4], 
     [2, 5],
     [3, 6],
 ];
@@ -36,3 +36,23 @@ for(let i = 0;i<r1;i++){
 }
 
 console.log(ans);
+
+
+class Node{
+    contructor(data){
+        this.data = data;
+        this.next = null;
+    }
+}
+
+let head = new Node(1);
+console.log(head.data);
+head.next = new Node(2);
+head.next.next= new Node(3);
+
+let temp = head;
+while(temp != null){
+    console.log(temp.data);
+    temp = temp.next;
+}
+
